@@ -24,7 +24,9 @@ ul {
 h1 {
   margin-bottom: 30px;
 }
-
+.web-header {
+  border-bottom: 1px solid #ececec;
+}
 .container {
   width: 1200px;
 
@@ -32,8 +34,6 @@ h1 {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-
-  margin-bottom: 94px;
 }
 
 .nav-container {
@@ -50,8 +50,6 @@ h1 {
 
 .header-link-cont {
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 .header-link-cont :not(:last-child) {
   margin-right: 50px;
@@ -82,17 +80,19 @@ a {
 }
 button {
   cursor: pointer;
-  padding: 10px 32px;
-  border: 0;
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 body {
   font-family: roboto, sans-serif;
 }
-footer {
+.footer {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 161px;
 }
 
 .logo {
@@ -150,14 +150,13 @@ footer {
 }
 .hero {
   background-color: #2f303a;
-  margin-bottom: 94px;
+  padding-top: 181px;
+  padding-bottom: 219px;
 }
 .hero-h {
-  padding-top: 200px;
-  padding-bottom: 30px;
-
   text-transform: uppercase;
   width: 696px;
+  height: 120px;
   margin-left: auto;
   margin-right: auto;
   font-size: 16px;
@@ -171,29 +170,32 @@ footer {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.37;
-  letter-spacing: 6%;
-  padding-bottom: 30px;
 }
-.button {
-  padding-bottom: 200px;
-}
+
 .hero-order {
   align-items: flex-start;
   display: block;
   margin-left: auto;
   margin-right: auto;
 
-  margin-top: 30px;
   background-color: var(--color-web-blue);
-  max-width: 216px;
+
   color: #ffffff;
 
   text-align: center;
   padding: 10px 32px;
-  border-radius: 4px;
-  border: none;
 
+  border: none;
+  padding: 10px 32px;
+  border: 0;
+  width: 216px;
+  height: 50px;
+  border-radius: 4;
   letter-spacing: 0.06em;
+}
+.feature {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .feature-li {
   width: 270px;
@@ -202,8 +204,6 @@ footer {
   flex-basis: calc(100%-90) / 4;
   display: flex;
   gap: 30px;
-
-  margin-bottom: 94px;
 }
 
 .feature-h {
@@ -221,7 +221,9 @@ footer {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-
+.doing {
+  padding-bottom: 94px;
+}
 .about-us-poto {
   display: flex;
   gap: 30px;
@@ -240,11 +242,24 @@ footer {
 
   gap: 30px;
 }
+.about-us-li {
+  material: shadow v1;
+}
 
 .link {
+  display: inline-block;
   color: var(--color-text-main);
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.comands {
+  background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .comand {
+  padding-top: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -253,6 +268,7 @@ footer {
   letter-spacing: 0.03em;
 }
 .comand-p {
+  padding-bottom: 30px;
   color: var(--color-text-secondary);
   font-weight: 400;
   font-size: 16px;
@@ -260,6 +276,10 @@ footer {
 
   text-align: center;
   letter-spacing: 0.03em;
+}
+.portfolio {
+  margin-top: 94px;
+  margin-bottom: 94px;
 }
 .portf-h-invis {
   text-align: center;
@@ -272,16 +292,19 @@ footer {
   text-align: center;
   letter-spacing: 0.03em;
 }
-.projects {
-  background: var(--color-fone);
-}
+
 .projects-h {
+  margin-bottom: 4px;
   color: var(--color-text-main);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
 
   letter-spacing: 0.06em;
+  border-right: 1px;
+  border-bottom: 1px;
+  border-left: 1px;
+  border: solid #eeeeee;
 }
 .projects-p {
   color: var(--color-text-secondary);
@@ -296,11 +319,9 @@ footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.link-footer {
-  padding-top: 20px;
-}
+
 .link-footer :not(:last-child) {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 .link-maps {
   color: white;
@@ -320,27 +341,29 @@ footer {
 .studio {
   color: #ffffff;
 }
+
 .menu-portfolio-btn {
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
 
   gap: 8px;
 }
+
 .projects {
-  padding-top: 34px;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
+
 .projects-li {
-  width: 370px;
   box-sizing: border-box;
   background: #ffffff;
-  border: 1px solid #eeeeee;
+}
+.li {
+  width: 370px;
 }
 .footer-logo {
-  padding-top: 0px;
-
-  padding-bottom: 0px;
+  margin-bottom: 20px;
   margin-right: 0px;
 }
