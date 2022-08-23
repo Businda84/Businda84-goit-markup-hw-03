@@ -155,17 +155,15 @@ body {
   line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
-  font-weight: 500px;
-
-  letter-spacing: 3%;
-  font-size: 16px;
-  height: 1.625;
+  border-radius: 4px;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 6px;
+  padding-bottom: 6px;
   border: 0px;
   background-color: #f5f4fa;
-  font-size: 16px;
-  line-height: 1.63;
-  text-align: center;
-  border-radius: 4px;
+
+  color: #212121;
   cursor: pointer;
 }
 .contact-link-footer {
@@ -318,6 +316,10 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.container-home {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .portf-h-invis {
   position: absolute;
   width: 1px;
@@ -388,7 +390,7 @@ body {
   box-sizing: border-box;
   background: #ffffff;
 }
-.list of projects {
+.projects-item {
   width: 370px;
 }
 .footer-logo {
